@@ -60,6 +60,7 @@ export function App() {
       {pictures.length ? (
         <Button title="Load more" onClick={changePageHandler} />
       ) : null}
+      {error && alert(error.message)}
     </div>
   );
 }
